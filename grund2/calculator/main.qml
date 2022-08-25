@@ -13,11 +13,20 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page1Form {
+            fourth_button.onPressed: {
+                image.source = "puke.png";
+            }
+            third_button.onPressed: {
+                image.source = "sad.png";
+            }
+            second_buton.onPressed: {
+                image.source = "happy.png";
+            }
             press_me.onPressed:  {
                 textField.text = "C'mon, press that button!";
             }
             press_me.onReleased: {
-                textField.text = "U released it!"
+                textField.text = "U released it!";
             }
         }
 
