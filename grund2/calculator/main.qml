@@ -125,7 +125,7 @@ ApplicationWindow {
                 calcTextField.text += "4";
             }
             buttonEqual.onClicked: {
-                calcTextField.text = eval(calcTextField.text);
+                calcTextField.text = calcTextField.text + "=" + eval(calcTextField.text);
                 calculated = true;
             }
             buttonEqual.onDoubleClicked: {
