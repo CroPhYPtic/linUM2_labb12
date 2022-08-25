@@ -13,6 +13,12 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page1Form {
+            press_me.onPressed:  {
+                textField.text = "C'mon, press that button!";
+            }
+            press_me.onReleased: {
+                textField.text = "U released it!"
+            }
         }
 
         Page2Form {
