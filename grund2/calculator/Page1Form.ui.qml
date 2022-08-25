@@ -12,16 +12,11 @@ Page {
     property alias textField: textField
     property alias press_me: press_me
 
-    header: Label {
-        text: qsTr("Page 1")
-        font.pixelSize: Qt.application.font.pixelSize * 2
-        padding: 10
-    }
 
     Button {
         id: press_me
-        x: 0
-        y: 0
+        x: 213
+        y: 158
         width: 121
         height: 84
         text: qsTr("Press me")
@@ -29,8 +24,10 @@ Page {
 
     TextField {
         id: textField
-        x: 127
-        y: 0
+        x: 340
+        y: 158
+        width: 180
+        height: 40
         text: qsTr("< U can press it...!")
     }
 
@@ -61,8 +58,8 @@ Page {
 
     Image {
         id: image
-        x: 11
-        y: 112
+        x: 36
+        y: 105
         width: 171
         height: 156
         fillMode: Image.PreserveAspectFit

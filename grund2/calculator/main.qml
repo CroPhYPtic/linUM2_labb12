@@ -122,13 +122,16 @@ ApplicationWindow {
                     calcTextField.text = "";
                     calculated = false;
                 }
-
                 calcTextField.text += "4";
             }
             buttonEqual.onClicked: {
                 calcTextField.text = eval(calcTextField.text);
                 calculated = true;
             }
+            buttonEqual.onDoubleClicked: {
+                calcTextField.text = "";
+            }
+
             buttonAddition.onClicked: {
                 if (calculated === true || calcTextField.text === 0)
                 {
@@ -170,10 +173,10 @@ ApplicationWindow {
         currentIndex: swipeView.currentIndex
 
         TabButton {
-            text: qsTr("Page 1")
+            text: qsTr("Del 1")
         }
         TabButton {
-            text: qsTr("Page 2")
+            text: qsTr("Kalkylator")
         }
     }
 }
